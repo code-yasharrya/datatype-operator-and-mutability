@@ -1,0 +1,40 @@
+PRACTICAL 2 - PREDICTION LOG
+Course: MCA Semester I - Python Programming
+Unit I / CO1
+
+Experiment A - Built-in types
+Prediction: int, float, str, list, tuple, dict, set.
+Observed output: 42 -> int; 3.14 -> float; '42' -> str; [1, 2] -> list; (1, 2) -> tuple; {'x': 1} -> dict; {1, 2} -> set.
+Explanation: type(value).__name__ reports each object's built-in type. Set display order may vary.
+
+Experiment B - Type conversion
+Prediction: 30; 7.0; 100 points; ['c', 'a', 't'].
+Observed output: 30; 7.0; 100 points; ['c', 'a', 't'].
+Explanation: int and float convert numeric strings, str converts an integer to text, and list splits a string into characters. int('twenty') would raise ValueError because it is not a valid base-10 integer literal.
+
+Experiment C - Operators and precedence
+Prediction: 14; 20; 3 2; 512; False; False.
+Observed output: 14; 20; 3 2; 512; False; False.
+Explanation: Multiplication precedes addition; parentheses override precedence; // gives floor quotient and % remainder; exponentiation associates from the right.
+
+Experiment D - Equality versus identity
+Prediction: True; False; True.
+Observed output: True; False; True.
+Explanation: == compares contents, while is checks object identity. c and a refer to the same list.
+
+Experiment E/F - Mutability
+Prediction: [99, 20, 30, 40]; Python; (4, 5).
+Observed output: [99, 20, 30, 40]; Python; (4, 5).
+Explanation: A list can be modified in place; strings and tuples cannot be modified in place. Assigning a newly constructed string to word is rebinding.
+
+Experiment G - Aliasing and copying
+Prediction: original: [1, 2, 3]; alias: [1, 2, 3]; copy: [1, 2].
+Observed output: original: [1, 2, 3]; alias: [1, 2, 3]; copy: [1, 2].
+Explanation: alias and original reference the same list. copy_list is a separate shallow copy.
+
+Inventory challenge
+Prediction: inventory: {'pen': 12, 'notebook': 5}; same_inventory: {'pen': 12, 'notebook': 5}; copied_inventory: {'pen': 10, 'notebook': 8}.
+Observed output: inventory: {'pen': 12, 'notebook': 5}; same_inventory: {'pen': 12, 'notebook': 5}; copied_inventory: {'pen': 10, 'notebook': 8}.
+Explanation: same_inventory is an alias of inventory, so changing it updates the same dictionary. copied_inventory is a separate shallow dictionary copy, so updating its integer values does not affect inventory.
+
+Note: These are reference predictions and outputs. Run the program and verify them yourself before submitting your observation log.

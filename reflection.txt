@@ -1,0 +1,6 @@
+PRACTICAL 2 - REFLECTION
+I learned how to identify Python's built-in data types and convert values between types.
+I observed how operator precedence changes the result of expressions.
+I understood that equality compares values, while identity checks whether references point to the same object.
+I learned that lists and dictionaries are mutable, whereas strings and tuples are immutable.
+The inventory challenge helped me understand aliasing and the difference between sharing and copying a dictionary.
